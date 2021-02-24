@@ -1,12 +1,10 @@
-# Implement a Tree data structure class
+# Implement a Tree data structure
 
 class Node():
+
     def __init__(self, data, children=None):
         self.data = data
         self.children = children or []
-
-    # def __repr__(self):
-        # implement a repr method for testing
 
     # Add child
     def add_child(self, node):
@@ -17,6 +15,7 @@ class Node():
         for child in self.children:
             print(f'Child of {self.data}: ', child.data)
 
+    # print descendants
     def print_descendants(self):
         # create list for nodes to check instantiate it with current nodes children
         nodes_to_check = self.children.copy()
