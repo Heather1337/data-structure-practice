@@ -45,17 +45,19 @@ class Tree {
     // }
 }
 
-const tree1 = new Tree(1);
-const tree2 = new Tree(2);
-const tree3 = new Tree(3);
-const tree4 = new Tree(4);
-const tree5 = new Tree(5);
+// const tree1 = new Tree(1);
+// const tree2 = new Tree(2);
+// const tree3 = new Tree(3);
+// const tree4 = new Tree(4);
+// const tree5 = new Tree(5);
 
-tree1.addChild(tree2);
-tree1.addChild(tree3);
-tree2.addChild(tree4);
-tree2.addChild(tree5);
+// tree1.addChild(tree2);
+// tree1.addChild(tree3);
+// tree2.addChild(tree4);
+// tree2.addChild(tree5);
 
-// tree1.printChildren();
-tree1.printDescendants();
+// // tree1.printChildren();
+// tree1.printDescendants();
 // console.log(tree2.isChild(tree5))
+
+module.exports = Tree;
