@@ -1,0 +1,18 @@
+{
+  "name": "data_structures",
+  "description": "interview practice",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Heather1337/data-structure-practice"
+  },
+  "keywords": [],
+  "author": "Heather Piverotto",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}

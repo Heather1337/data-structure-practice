@@ -14,9 +14,7 @@ class BinaryTree {
     }
 
     addNode(node) {
-        //check if the tree has a root
         if(!this.root) return this.root = node;
-        //if it does have a root
         const checkNodes = (curr) => {
             if(curr.left === null) return curr.left = node;
             else if(curr.right === null) return curr.right = node;
@@ -35,7 +33,6 @@ class BinaryTree {
 
     replaceNode(newNode, nodeToReplace, node=this.root) {
         let curr = node;
-        console.log(curr.data, nodeToReplace.data)
         if(curr.data == nodeToReplace.data) return curr.data = newNode.data;
         else {
             if(curr.left !== null) this.replaceNode(newNode, nodeToReplace, curr.left)
@@ -61,3 +58,6 @@ tree.addNode(node5)
 tree.printNodes()
 tree.replaceNode(node1337, node5)
 tree.printNodes()
+
+exports.BinaryTree = BinaryTree
+exports.Node = Node

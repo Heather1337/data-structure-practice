@@ -13,15 +13,11 @@ class Binary_Tree():
     def __init__(self, root=None):
         self.root = root
 
-    # Methods we should add?
-
-    # Adding a new node to our tree
     def add_node(self, node):
         # first check to see if the root of our tree is empty
         if self.root == None:
             self.root = node
             return
-        # if root is not none
         else:
             def check_children(parent=self.root):
                 if not parent.left:
@@ -33,7 +29,6 @@ class Binary_Tree():
                 check_children(parent.left)
             check_children()
 
-    # Printing all of the tree nodes
     def print_children(self, current=None):
         if not current:
             current = self.root
@@ -46,13 +41,6 @@ class Binary_Tree():
 
     # Replace a node
     def replace_node(self, node_to_replace, new_node):
-        # edge case - if current is none
-        # return 'no node found with the data'
-        # if current.data is equal to node to replace then
-        # node_to_replace = new_node
-        # if not equal
-        # move to next node //curr.left
-        # move to next node //curr.right
 
         nodes_to_visit = [self.root]
         # current = self.root
